@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="columns" id="search">
+    <img class="pics"src="assets/IMG_1587.jpg" (click)="incrementViews()">
+    <div id="views-label">
+          <p id="viewCount" >{{viewCounter}}  &nbsp;&nbsp; Views &nbsp;&nbsp;&nbsp;&nbsp;</p>
+          <p id="likeCount" >{{likeCounter}}  &nbsp;&nbsp;
+          <img id="likeBtn" src="assets/like.svg" (click)="incrementLikes()">
+        </p>
+    </div>
+    <!-- comments here -->
+    <div id="commentBox">
+    <button type="button" id="commentBtn" (click)="onSelect()">Comments</button>
+    <ul id="content-list" [hidden]="IsHidden">
+      <li *ngFor="let content of content; let i = index">{{content.name}}
+      <img src="assets/delete.svg" (click)="removeContent(i)">
+      <p>{{ content.comment }}</p>
+      </li>
+    </ul>
+    </div>
+    <!-- comments end here -->
+    <!-- Submit form for adding a comment -->
+    <form #form="ngForm" (ngSubmit)="addContent(form.value)" >
+      <input type="text" placeholder="Name" name="name" [(ngModel)]= "name">
+      <textarea placeholder="Comment..." name="comment" [(ngModel)]= "comment" rows="3"></textarea>
+      <button type="submit" id="btn">Add Comment</button>
+    </form>
+  </div>
+</div>
+<!-- Submit form for adding a comment ends here -->
+<div class="row">
+  <div class="columns" id="search">
+    <img class="pics"src="assets/IMG_1587.jpg" (click)="incrementViews()">
+    <div id="views-label">
+          <p id="viewCount" >{{viewCounter}}  &nbsp;&nbsp; Views &nbsp;&nbsp;&nbsp;&nbsp;
+          <p id="likeCount" >{{likeCounter}}  &nbsp;&nbsp;
+          <img id="likeBtn" src="assets/like.svg" (click)="incrementLikes()">
+        </p>
+    </div>
+    <!-- comments here -->
+    <div id="commentBox">
+    <button type="button" id="commentBtn" (click)="onSelect()">Comments</button>
+    <ul id="content-list" [hidden]="IsHidden">
+      <li *ngFor="let content of content; let i = index">{{content.name}}
+      <img src="assets/delete.svg" (click)="removeContent(i)">
+      <p>{{ content.comment }}</p>
+      </li>
+    </ul>
+    </div>
+    <!-- comments end here -->
+    <!-- Submit form for adding a comment -->
+    <form #form="ngForm" (ngSubmit)="addContent(form.value)" >
+      <input type="text" placeholder="Name" name="name" [(ngModel)]= "name">
+      <textarea placeholder="Comment..." name="comment" [(ngModel)]= "comment" rows="3"></textarea>
+      <button type="submit" id="btn">Add Comment</button>
+    </form>
+  </div>
+</div>
+<!-- Submit form for adding a comment ends here -->

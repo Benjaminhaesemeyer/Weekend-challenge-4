@@ -1,0 +1,39 @@
+header {
+background: #f1f2f3;
+margin-bottom: 200px;
+
+}
+
+#logo {
+  color: #1ad39a;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 5px 0;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  float: left;
+}
+
+ul li a {
+  color: #3f4648;
+  padding: 15px 30px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+ul li a:hover {
+  background:  #1ad395;
+
+}
