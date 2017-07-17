@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent {
 //Content array with a initial object entry
 content = [
-{ "name": 'Jake', "comment": "Wow, cool picture!" }
 ];
 //Created two properties that are form fields, and ar ebond to ngModels
 name:string = '';
@@ -44,10 +43,5 @@ IsHidden= true;
 onSelect(){
  this.IsHidden= !this.IsHidden;
 }
-//image show hide function
-imgIsHidden= true;
 
-onSelectImg(){
- this.IsHidden= !this.IsHidden;
-}
 }

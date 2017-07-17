@@ -15,6 +15,7 @@ img{
 
 #commentBox {
   background-color: #2a3031;
+  padding-bottom: 24px;
 }
 #views-label {
   color: #fff;
@@ -29,6 +30,8 @@ display: inline;
 float: left;
 font-size: 30px;
 font-weight: bold;
+padding-left: 14px;
+padding-top: 14px;
 
 }
 
@@ -38,6 +41,8 @@ display: inline;
 font-size: 30px;
 font-weight: bold;
 color: #D75A4A;
+padding-right: 14px;
+padding-top: 14px;
 }
 
 
@@ -57,7 +62,7 @@ input::placeholder, textarea::placeholder {
 #btn {
   display: block;
   width: 100%;
-  background: #1ad39a;
+  background: #4ac7d7;
   padding: 15px 0;
   margin-top: 20px;
 
